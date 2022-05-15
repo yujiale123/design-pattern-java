@@ -1,19 +1,17 @@
 package com.yjl.design.creation.builder;
 
 /**
- * @program: DesignPatterns
+ * @program: design-patter-demo
  * @author: yjl
- * @created: 2021/11/23
+ * @created: 2022/05/15
  */
 public class MainTest {
     public static void main(String[] args) {
-        ComputerBuilder computerBuilder = new ComputerBuilder();
-        computerBuilder.installMainUnit("主机");
-        computerBuilder.installMouse("鼠标");
-        computerBuilder.installKeyboard("键盘");
-        computerBuilder.installDisplayed("显示器");
-        Computer computer = computerBuilder.getComputer();
-        System.out.println(computer);
+        Director director = new Director();
+        Product product1 = director.getAProduct();
+        product1.showProduct();
 
+        Product product2 = director.getBProduct();
+        product2.showProduct();
     }
 }
