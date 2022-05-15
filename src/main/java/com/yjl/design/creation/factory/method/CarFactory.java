@@ -5,7 +5,9 @@ package com.yjl.design.creation.factory.method;
  * @author: yjl
  * @created: 2022/05/15
  */
-public interface ICar {
-
-    void run();
+public class CarFactory implements IFactory {
+    @Override
+    public ITravel newTravel() {
+        return new Car();
+    }
 }

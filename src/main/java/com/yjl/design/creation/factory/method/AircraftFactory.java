@@ -5,9 +5,10 @@ package com.yjl.design.creation.factory.method;
  * @author: yjl
  * @created: 2022/05/15
  */
-public class MediumCarFactory implements IFactory{
+public class AircraftFactory implements IFactory {
+
     @Override
-    public MaxCar newCar() {
-        return (ICar) new MediumCar();
+    public ITravel newTravel() {
+        return new Aircraft();
     }
 }

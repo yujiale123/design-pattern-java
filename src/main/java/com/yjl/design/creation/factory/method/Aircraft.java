@@ -1,17 +1,13 @@
 package com.yjl.design.creation.factory.method;
 
-
 /**
  * @program: design-patter-demo
  * @author: yjl
  * @created: 2022/05/15
  */
-public class MaxCarFactory implements IFactory {
+public class Aircraft  implements ITravel{
     @Override
-    public ICar newCar() {
-
-
-        ICar maxCar = new MaxCar();
-        return ICar;
+    public void go() {
+        System.out.println(" 飞机 go");
     }
 }

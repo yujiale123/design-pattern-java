@@ -5,7 +5,9 @@ package com.yjl.design.creation.factory.method;
  * @author: yjl
  * @created: 2022/05/15
  */
-public interface IFactory {
-
-    ITravel newTravel();
+public class Train implements ITravel {
+    @Override
+    public void go() {
+        System.out.println(" 火车 go");
+    }
 }

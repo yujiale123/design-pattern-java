@@ -5,9 +5,9 @@ package com.yjl.design.creation.factory.method;
  * @author: yjl
  * @created: 2022/05/15
  */
-public class MinCarFactory implements IFactory{
+public class Car implements ITravel {
     @Override
-    public MaxCar newCar() {
-        return (ICar) new MinCar();
+    public void go() {
+        System.out.println("汽车 go");
     }
 }

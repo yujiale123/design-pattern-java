@@ -7,11 +7,9 @@ package com.yjl.design.creation.factory.method;
  */
 public class MainTest {
     public static void main(String[] args) {
-        IFactory minCarFactory = new MinCarFactory();
-        ICar minCar = minCarFactory.newCar();
-        minCar.run();
-        IFactory maxCarFactory = new MaxCarFactory();
-        ICar maxCar = maxCarFactory.newCar();
-        maxCar.run();
+        CarFactory carFactory = new CarFactory();
+        ITravel car = carFactory.newTravel();
+        car.go();
+
     }
 }
