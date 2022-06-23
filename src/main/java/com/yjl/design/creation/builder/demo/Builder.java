@@ -1,9 +1,11 @@
-package com.yjl.design.creation.builder;
+package com.yjl.design.creation.builder.demo;
 
 /**
  * @program: design-patter-demo
  * @author: yjl
  * @created: 2022/05/15
+ *
+ * 建造者模式
  */
 public abstract class Builder {
 

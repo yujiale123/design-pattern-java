@@ -1,4 +1,4 @@
-package com.yjl.design.creation.builder;
+package com.yjl.design.creation.builder.demo;
 
 /**
  * @program: design-patter-demo
@@ -10,7 +10,6 @@ public class MainTest {
         Director director = new Director();
         Product product1 = director.getAProduct();
         product1.showProduct();
-
         Product product2 = director.getBProduct();
         product2.showProduct();
     }
