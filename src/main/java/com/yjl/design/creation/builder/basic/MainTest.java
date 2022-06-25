@@ -1,4 +1,4 @@
-package com.yjl.design.creation.builder.basicDemo;
+package com.yjl.design.creation.builder.basic;
 
 /**
  * @program: design-patter-demo
