@@ -1,4 +1,4 @@
-package com.yjl.design.creation.prototype.shallowCopy;
+package com.yjl.design.creation.prototype.basic.shallowCopy;
 
 /**
  * @program: DesignPatterns

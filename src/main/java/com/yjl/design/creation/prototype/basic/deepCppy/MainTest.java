@@ -1,4 +1,4 @@
-package com.yjl.design.creation.prototype.deepCppy;
+package com.yjl.design.creation.prototype.basic.deepCppy;
 
 import java.util.ArrayList;
 import java.util.List;
