@@ -7,6 +7,9 @@ import java.util.List;
  * @program: DesignPatterns
  * @author: yjl
  * @created: 2022/01/20
+
+ *
+ *
  */
 public class MainTest {
 
@@ -21,13 +24,16 @@ public class MainTest {
         prototype.setHobbies(hobbies);
 
         //拷贝原型对象
-        ConcretePrototype cloneType = prototype.deepCloneHobbies();
+        ConcretePrototype cloneType = prototype.deepClone();
         cloneType.getHobbies().add("技术控");
 
         System.out.println("原型对象：" + prototype);
         System.out.println("克隆对象：" + cloneType);
         System.out.println(prototype == cloneType);
 
+        Integer prototypeAge = prototype.getAge();
+        Integer cloneTypeAge = cloneType.getAge();
+        System.out.println(prototypeAge.intValue() == cloneTypeAge.intValue());
 
         System.out.println("原型对象的爱好：" + prototype.getHobbies());
         System.out.println("克隆对象的爱好：" + cloneType.getHobbies());

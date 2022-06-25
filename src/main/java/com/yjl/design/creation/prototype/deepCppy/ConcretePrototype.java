@@ -12,6 +12,12 @@ import java.util.List;
  * @program: DesignPatterns
  * @author: yjl
  * @created: 2022/01/20
+ *  * 原型模式之深拷贝是完全从原型中复制一份独立的对象,不管是基本数据类型还是引用数据类型都与原型中的基本数据类型和引用数据类型不一样
+ *  * 深拷贝的实现方式
+ *  - 递归拷贝对象、对象引用以及对象的引用对象，一直拷贝到对象只包含基本数据类型
+ *  - 先将对象序列化，然后在反序列化成新对象
+ *  - 先采用浅拷贝方式创建 newKeyWords，对于需要更新的 SearchWord 对象，然后在使用深拷贝的方式创建一份新的对象，替换 newKeyWords 中的老对象
+ *  第三种实现方式利用浅拷贝节约了时间和空间的有点，又能保证克隆对象中的数据是老版本的数据
  */
 public class ConcretePrototype implements Cloneable, Serializable {
 
