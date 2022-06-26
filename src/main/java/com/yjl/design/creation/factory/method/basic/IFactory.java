@@ -1,4 +1,4 @@
-package com.yjl.design.creation.factory.method;
+package com.yjl.design.creation.factory.method.basic;
 
 /**
  * @program: design-patter-demo
