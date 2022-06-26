@@ -13,10 +13,10 @@ public class RealizeDeepCopyMethod03 {
     private long lastUpdateTime = -1;
 
     public void refresh() {
-//Shallowcopy
+     //Shallowcopy
         HashMap<String, SearchWord> newKeywords = (HashMap<String, SearchWord>) currentKeywords;
 
-//从数据库中取出更新时间 >lastUpdateTime 的数据，放入到newKeywords 中
+        //从数据库中取出更新时间 >lastUpdateTime 的数据，放入到newKeywords 中
         List<SearchWord> toBeUpdatedSearchWords = getSearchWords(lastUpdateTime);
         long maxNewUpdatedTime = lastUpdateTime;
         for (SearchWord searchWord : toBeUpdatedSearchWords) {
