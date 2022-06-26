@@ -1,16 +1,19 @@
-package com.yjl.design.creation.factory.simple;
+package com.yjl.design.creation.factory.simple.basic.demo;
 
 /**
  * @program: design-patter-demo
  * @author: yjl
  * @created: 2022/05/15
  */
-public class MaxCar implements ICar {
+public class MinCar implements ICar {
+
     private String engine;
 
-    public MaxCar() {
-        this.engine = "大型轿车";
+
+    public MinCar() {
+        this.engine = "小型汽车";
     }
+
 
     @Override
     public void run() {
