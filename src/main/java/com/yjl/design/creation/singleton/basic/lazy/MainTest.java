@@ -1,4 +1,4 @@
-package com.yjl.design.creation.singleton.lazy;
+package com.yjl.design.creation.singleton.basic.lazy;
 
 /**
  * @Author yujiale

@@ -1,4 +1,4 @@
-package com.yjl.design.creation.singleton.InnerClassSingleton;
+package com.yjl.design.creation.singleton.basic.InnerClassSingleton;
 
 import java.io.*;
 import java.lang.reflect.Constructor;

@@ -1,4 +1,4 @@
-package com.yjl.design.creation.singleton.enumSingleton;
+package com.yjl.design.creation.singleton.basic.enumSingleton;
 
 /**
  * @Author yujiale

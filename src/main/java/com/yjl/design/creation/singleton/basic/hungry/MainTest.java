@@ -1,4 +1,4 @@
-package com.yjl.design.creation.singleton.hungry;
+package com.yjl.design.creation.singleton.basic.hungry;
 
 /**
  * @Author yujiale
