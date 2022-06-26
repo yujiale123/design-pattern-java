@@ -1,4 +1,4 @@
-package com.yjl.design.creation.prototype;
+package com.yjl.design.creation.prototype.actualcombat.mybatis;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +7,7 @@ import java.util.Map;
  * @program: DesignPatterns
  * @author: yjl
  * @created: 2021/10/09
+ * mybatis 中 拷贝对象
  */
 public class Mybatis {
 
@@ -28,7 +29,6 @@ public class Mybatis {
             user = (User) user.clone();
         }
         return user;
-
     }
 
     private User getUserDb(String name) throws CloneNotSupportedException {

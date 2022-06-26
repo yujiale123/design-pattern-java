@@ -1,4 +1,4 @@
-package com.yjl.design.creation.prototype;
+package com.yjl.design.creation.prototype.actualcombat.mybatis;
 
 /**
  * @program: DesignPatterns
