@@ -1,4 +1,4 @@
-package com.yjl.design.creation.factory.simple.basic.actual;
+package com.yjl.design.creation.factory.simple.actual;
 
 /**
  * @Author yujiale
