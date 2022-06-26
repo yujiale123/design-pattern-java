@@ -1,18 +1,18 @@
-package com.yjl.design.creation.abstractFactory;
+package com.yjl.design.creation.abstractFactory.basic;
 
 /**
  * @program: design-patter-demo
  * @author: yjl
  * @created: 2022/05/15
  */
-public class TwoFarm implements Farm {
+public class FirstFarm implements Farm {
     @Override
     public Animal newAnimal() {
-        return new Cattle();
+        return new Dog();
     }
 
     @Override
     public Plant newPlant() {
-        return new Grass();
+        return new Flowers();
     }
 }
