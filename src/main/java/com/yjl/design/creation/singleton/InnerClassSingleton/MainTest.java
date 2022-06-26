@@ -41,7 +41,7 @@ public class MainTest {
 
     /**
      * 序列化:
-     *
+     * <p>
      * 1)可以利用指定方法来替换从反序列化流中的数据
      * 序列化就是把一个java对象变成二进制内容,本质上就是一个byte[]数组.
      * 为什么要把要把java对象序列化呢?
@@ -49,7 +49,6 @@ public class MainTest {
      * 反序列化:
      * 就是把一个文件中的或者网络上接收到的二进制内容(即byte[]数组)变回java对象.
      *
-
      * @throws ClassNotFoundException
      */
     public static void test03() throws IOException, ClassNotFoundException {
@@ -57,8 +56,6 @@ public class MainTest {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("test"));
         oos.writeObject(instance);
         oos.close();
-
-
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("test"));
         Object o = ois.readObject();
         System.out.println(o);
