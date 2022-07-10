@@ -37,6 +37,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  #这个是阿里云的私钥
           REMOTE_HOST:  "124.222.245.253"   #阿里云的 ip
           REMOTE_USER: "root"    #阿里云用户
+          REMOTE_PASSWORD: "Txy104802"
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any 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
