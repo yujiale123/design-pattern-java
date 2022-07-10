@@ -33,13 +33,11 @@ jobs:
 
       - name: Server Linux
         uses: easingthemes/ssh-deploy@main
-        env:
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: -rltgoDzvO --delete
           REMOTE_HOST: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_USER: root
           TARGET: /www/wwwroot/sonarqube.it-pang.com
-          EXCLUDE:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any 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
