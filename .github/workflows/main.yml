@@ -39,7 +39,7 @@ jobs:
           SOURCE:
           REMOTE_HOST: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_USER: root
-          TARGET: /www/wwwroot/sonarqube.it-pang.com/
+          TARGET: /www/wwwroot/sonarqube.it-pang.com
           EXCLUDE:
       - name: Build and analyze
         env:
