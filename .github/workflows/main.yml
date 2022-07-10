@@ -31,13 +31,13 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
 
-      - name: Server Linux
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_USER: root
-          TARGET: /www/wwwroot/sonarqube.it-pang.com
+      - name: Deploy to qq server        # 为 step 指定一个名称，将会在 github action 的控制台中显示
+        uses: easingthemes/ssh-deploy@v2.1.5      #可以访问的仓库，实现的上传服务器步骤被封装在此action
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  #这个是阿里云的私钥
+          ARGS: "-avzr --delete"
+          REMOTE_HOST: ${{ secrets.SONAR_HOST_URL }}    #阿里云的 ip
+          REMOTE_USER: "root"    #阿里云用户
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any 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
