@@ -31,6 +31,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build and analyze
+        uses: easingthemes/ssh-deploy@main
         with:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           server: ${{ secrets.SONAR_HOST_URL }}
